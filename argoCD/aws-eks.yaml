@@ -3,7 +3,7 @@ kind: ClusterClaim
 metadata:
   name: team-a-eks
   labels:
-    cluster-owner: cem 
+    cluster-owner: robertorm
 spec:
   id: team-a-eks
   compositionSelector:
