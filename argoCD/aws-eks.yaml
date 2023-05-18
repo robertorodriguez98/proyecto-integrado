@@ -5,7 +5,7 @@ metadata:
   labels:
     cluster-owner: robertorm
 spec:
-  id: proyecto-integrado-eks
+  id: proyecto
   compositionSelector:
     matchLabels:
       provider: aws
