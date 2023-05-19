@@ -1,15 +1,15 @@
 apiVersion: prodready.cluster/v1alpha1
 kind: ClusterClaim
 metadata:
-  name: team-a-eks
+  name: proyecto-eks
   labels:
     cluster-owner: robertorm
 spec:
-  id: team-a-eks
+  id: proyecto-eks
   compositionSelector:
     matchLabels:
       provider: aws
       cluster: eks
   parameters:
     nodeSize: medium
-    minNodeCount: 2
+    minNodeCount: 3
