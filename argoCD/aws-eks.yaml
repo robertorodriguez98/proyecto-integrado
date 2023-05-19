@@ -1,11 +1,11 @@
 apiVersion: prodready.cluster/v1alpha1
 kind: ClusterClaim
 metadata:
-  name: proyecto
+  name: team-a-eks
   labels:
     cluster-owner: robertorm
 spec:
-  id: proyecto
+  id: team-a-eks
   compositionSelector:
     matchLabels:
       provider: aws
