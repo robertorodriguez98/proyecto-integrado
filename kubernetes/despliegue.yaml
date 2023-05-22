@@ -1,0 +1,30 @@
+apiVersion: kubernetes.crossplane.io/v1alpha1
+kind: Object
+metadata:
+  name: despliegue-aplicacion-remoto
+spec:
+  forProvider:
+    manifest:
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        namespace: aplicacion
+        labels:
+          app: aplicacion
+      spec:
+        replicas: 2
+        selector:
+          matchLabels:
+            app: aplicacion
+        template:
+          metadata:
+            labels:
+              app: aplicacion
+          spec:
+            containers:
+            - name: aplicacion
+              image: robertorm/pruebatekton:05aa0b8
+              ports:
+              - containerPort: 80
+  providerConfigRef:
+    name: kubernetes-provider

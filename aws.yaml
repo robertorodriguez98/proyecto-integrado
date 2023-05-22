@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argoCD
+    path: aws
     repoURL: https://github.com/robertorodriguez98/proyecto-integrado.git
     targetRevision: main
   syncPolicy:
