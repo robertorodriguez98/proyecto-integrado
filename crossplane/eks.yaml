@@ -90,7 +90,7 @@ spec:
         - type: map
           map:
             small: t3.small
-            medium: t3.medium
+            medium: t2.micro
             large: t3.large
     - fromFieldPath: spec.id
       toFieldPath: spec.forProvider.nodeRoleSelector.matchLabels.role
