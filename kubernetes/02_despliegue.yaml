@@ -23,8 +23,8 @@ spec:
           spec:
             containers:
             - name: aplicacion
-              image: robertorm/pokedex:v1
+              image: robertorm/web-proyecto:v1
               ports:
-              - containerPort: 5173
+              - containerPort: 80
   providerConfigRef:
     name: kubernetes-provider
